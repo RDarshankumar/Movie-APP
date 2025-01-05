@@ -117,6 +117,7 @@ const MainMovies = () => {
             backgroundColor: '#e50914', // Netflix red color
             '&:hover': { backgroundColor: '#f40612' },
             padding: '0.8rem 2rem',
+            margin: '1rem 0'
           }}
         >
           Logout

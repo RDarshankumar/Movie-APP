@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
+import img1 from './Back.jpg'
 
 const HeroSection = () => {
   return (
@@ -19,15 +20,22 @@ const HeroSection = () => {
     >
       {/* Overlay for better text visibility */}
       <Box
-        sx={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent black overlay
-        }}
-      />
+  sx={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.8)', // Darker overlay for a Netflix-like look
+    backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(${img1})`, // Gradient + watermark image
+    backgroundSize: 'cover', // Making the watermark image cover the entire area
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center center', // Center the image perfectly
+    opacity: 1, // Full opacity for a strong effect
+  }}
+/>
+
+
 
       <Box sx={{ position: 'relative', zIndex: 1, padding: '2rem', maxWidth: '600px' }}>
         <Typography variant="h2" component="h1" sx={{ fontWeight: 'bold', marginBottom: '1rem' }}>
