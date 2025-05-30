@@ -1,4 +1,4 @@
-# 🍿 Netflix Clone Web App
+# 🍿 Movie-Web-App
 
 A sleek and responsive **Netflix-style streaming web application** built using **React**, **Firebase Authentication**, and **Material UI**. This project simulates the frontend of a modern OTT platform with authentication and a clean UI.
 
